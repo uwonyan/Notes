@@ -1,0 +1,255 @@
+object Form2: TForm2
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsSingle
+  Caption = #1044#1086#1073#1072#1074#1080#1090#1100' '#1085#1086#1074#1091#1102' '#1079#1072#1084#1077#1090#1082#1091
+  ClientHeight = 335
+  ClientWidth = 831
+  Color = clWhite
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -15
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  Icon.Data = {
+    0000010001001010000001002000680400001600000028000000100000002000
+    0000010020000000000000040000D70D0000D70D0000000000000000000000A0
+    FF0000A0FF0022B1FF008FE6FF1D82E0FF5882E0FF4182E0FF2C81DFFF1A40BF
+    FF1A0BA6FF2B009EFF41009DFF580095FF1D5FCFFF0082E0FF0082E0FF0000A0
+    FF2200A0FF34009CFF4655CAFF9682E0FFF982E0FFF182E0FFE582E0FFD576DA
+    FFD562D0FFE550C7FFF140BFFFF954C9FF9787E2FF4782E0FF3482E0FF2200A0
+    FFDD00A0FFF0009FFFF93EBFFFFF84E1FFFF82E0FFFF82E0FFFF82E0FFFF83E0
+    FFFF83E1FFFF84E1FFFF83E1FFFF82E0FFFF82E0FFF982E0FFF082E0FFDD00A0
+    FFE700A0FFFF009FFFFF49C4FFFF84E1FFFF82E0FFFF82E0FFFF82E0FFFF82E0
+    FFFF82E0FFFF82E0FFFF82E0FFFF82E0FFFF82E0FFFF82E0FFFF82E0FFE700A0
+    FFCA00A0FFFF01A0FFFF53C9FFFF84E1FFFF82E0FFFF82E0FFFF82E0FFFF82E0
+    FFFF82E0FFFF82E0FFFF82E0FFFF82E0FFFF82E0FFFF82E0FFFF82E0FFCA00A0
+    FFAC00A0FFFF03A2FFFF5DCEFFFF84E1FFFF82E0FFFF82E0FFFF82E0FFFF82E0
+    FFFF82E0FFFF82E0FFFF82E0FFFF82E0FFFF82E0FFFF82E0FFFF82E0FFAC00A0
+    FF8C00A0FFFF07A3FFFF66D2FFFF84E1FFFF82E0FFFF82E0FFFF82E0FFFF82E0
+    FFFF82E0FFFF82E0FFFF82E0FFFF82E0FFFF82E0FFFF82E0FFFF82E0FF8D00A0
+    FF6D00A0FFFD0CA6FFFF6ED6FFFF83E1FFFF82E0FFFF82E0FFFF82E0FFFF82E0
+    FFFF82E0FFFF82E0FFFF82E0FFFF82E0FFFF82E0FFFF82E0FFFD82E0FF6D00A0
+    FF4F009FFFF612A9FFFF75D9FFFF83E0FFFF82E0FFFF82E0FFFF82E0FFFF82E0
+    FFFF82E0FFFF82E0FFFF82E0FFFF82E0FFFF82E0FFFF82E0FFF682E0FF5000A0
+    FF36009FFFEB1AADFFFF7ADCFFFF82E0FFFF82E0FFFF82E0FFFF82E0FFFF82E0
+    FFFF82E1FFFF82E1FFFF82E0FFFF82E0FFFF82E0FFFF82E0FFEB82E0FF3600A0
+    FF20009FFFDC23B1FFFF7FDEFFFF83E0FFFF82E0FFFF82E0FFFF82E0FFFF82E0
+    FFFF7DC9DFFF80D7F3FF82E1FFFF82E1FFFF82E0FFFF82E0FFDC82E0FF2100A0
+    FF10009FFFC824B2FFFF74D9FFFF7BDDFFFF7FDEFFFF81DFFFFF82E0FFFF82E1
+    FFFF79B6C5FF739B9EFF7DD1F2FF7BD2FFFF81DEFFFF82E0FFC982E0FF1100A0
+    FF0500A0FFAE05A2FFFD15ABFFEE23B1FFE034BAFFCF4CC5FFB96DD5FFA182E0
+    FFA182E0FEB96F9EB9D94B63DAFE415AF7FF6099FAFF81DEFFAF86E9FF0500A0
+    FF0000A0FF3400A0FF49009DFF320099FF1F0090FF11007AFF070000FF0178D8
+    FB01E9FFFF03415BF95C3642F4FD3541F4FF3B4EF5EC68ABFB472219F10000A0
+    FF0000A0FF0000A0FF0000A0FF0000A0FF0000A0FF0000A0FF0006A3FF0082E0
+    FF00415BF6003540F42C3643F4D83643F4FC3642F4A51C0CF0073949F4000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    00003643F4003643F4003643F4333643F45A3643F41A3643F4003643F4000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000FF800000}
+  OldCreateOrder = False
+  Position = poScreenCenter
+  OnShow = FormShow
+  DesignSize = (
+    831
+    335)
+  PixelsPerInch = 96
+  TextHeight = 18
+  object GroupBox1: TGroupBox
+    Left = 8
+    Top = 8
+    Width = 537
+    Height = 289
+    Caption = #1053#1086#1074#1072#1103' '#1079#1072#1084#1077#1090#1082#1072
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 0
+    object cxMemo1: TcxMemo
+      Left = 8
+      Top = 29
+      Lines.Strings = (
+        #1042#1074#1077#1076#1080#1090#1077' '#1090#1077#1082#1089#1090'...')
+      ParentFont = False
+      Style.BorderColor = clWindowText
+      Style.BorderStyle = ebsUltraFlat
+      Style.Font.Charset = DEFAULT_CHARSET
+      Style.Font.Color = clBlack
+      Style.Font.Height = -15
+      Style.Font.Name = 'Tahoma'
+      Style.Font.Style = []
+      Style.Shadow = False
+      Style.IsFontAssigned = True
+      TabOrder = 0
+      Height = 251
+      Width = 520
+    end
+  end
+  object cxButton1: TcxButton
+    Left = 8
+    Top = 302
+    Width = 537
+    Height = 25
+    Anchors = [akLeft, akTop, akRight]
+    Caption = #1057#1086#1093#1088#1072#1085#1080#1090#1100
+    TabOrder = 1
+    OnClick = cxButton1Click
+  end
+  object GroupBox2: TGroupBox
+    Left = 551
+    Top = 48
+    Width = 271
+    Height = 223
+    Caption = #1053#1072#1089#1090#1088#1086#1081#1082#1080' '#1090#1077#1082#1089#1090#1072
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 2
+    object cxColorComboBox1: TcxColorComboBox
+      Left = 111
+      Top = 26
+      ColorValue = clBlack
+      ParentFont = False
+      Properties.CustomColors = <>
+      Properties.OnChange = cxColorComboBox1PropertiesChange
+      Style.Font.Charset = DEFAULT_CHARSET
+      Style.Font.Color = clWindowText
+      Style.Font.Height = -15
+      Style.Font.Name = 'Tahoma'
+      Style.Font.Style = []
+      Style.IsFontAssigned = True
+      TabOrder = 0
+      Width = 150
+    end
+    object cxLabel1: TcxLabel
+      Left = 11
+      Top = 28
+      Caption = #1062#1074#1077#1090' '#1090#1077#1082#1089#1090#1072':'
+      ParentFont = False
+      Style.Font.Charset = DEFAULT_CHARSET
+      Style.Font.Color = clWindowText
+      Style.Font.Height = -15
+      Style.Font.Name = 'Tahoma'
+      Style.Font.Style = []
+      Style.IsFontAssigned = True
+    end
+    object cxLabel2: TcxLabel
+      Left = 11
+      Top = 59
+      Caption = #1056#1072#1079#1084#1077#1088' '#1096#1088#1080#1092#1090#1072':'
+      ParentFont = False
+      Style.Font.Charset = DEFAULT_CHARSET
+      Style.Font.Color = clWindowText
+      Style.Font.Height = -15
+      Style.Font.Name = 'Tahoma'
+      Style.Font.Style = []
+      Style.IsFontAssigned = True
+    end
+    object cxSpinEdit1: TcxSpinEdit
+      Left = 136
+      Top = 58
+      ParentFont = False
+      Properties.MinValue = 1.000000000000000000
+      Properties.OnChange = cxSpinEdit1PropertiesChange
+      Style.Font.Charset = DEFAULT_CHARSET
+      Style.Font.Color = clWindowText
+      Style.Font.Height = -15
+      Style.Font.Name = 'Tahoma'
+      Style.Font.Style = []
+      Style.IsFontAssigned = True
+      TabOrder = 3
+      Value = 14
+      Width = 125
+    end
+    object cxRadioButton1: TcxRadioButton
+      Left = 11
+      Top = 100
+      Width = 113
+      Height = 17
+      Caption = #1046#1080#1088#1085#1099#1081
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -15
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ParentFont = False
+      TabOrder = 4
+      OnClick = cxRadioButton1Click
+    end
+    object cxRadioButton2: TcxRadioButton
+      Left = 11
+      Top = 123
+      Width = 113
+      Height = 17
+      Caption = #1050#1091#1088#1089#1080#1074
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -15
+      Font.Name = 'Tahoma'
+      Font.Style = [fsItalic]
+      ParentFont = False
+      TabOrder = 5
+      OnClick = cxRadioButton2Click
+    end
+    object cxRadioButton3: TcxRadioButton
+      Left = 11
+      Top = 146
+      Width = 129
+      Height = 17
+      Caption = #1055#1086#1076#1095#1077#1088#1082#1085#1091#1090#1099#1081
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -15
+      Font.Name = 'Tahoma'
+      Font.Style = [fsUnderline]
+      ParentFont = False
+      TabOrder = 6
+      OnClick = cxRadioButton3Click
+    end
+    object cxRadioButton4: TcxRadioButton
+      Left = 11
+      Top = 169
+      Width = 113
+      Height = 17
+      Caption = #1047#1072#1095#1077#1088#1082#1085#1091#1090#1099#1081
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -15
+      Font.Name = 'Tahoma'
+      Font.Style = [fsStrikeOut]
+      ParentFont = False
+      TabOrder = 7
+      OnClick = cxRadioButton4Click
+    end
+    object cxRadioButton5: TcxRadioButton
+      Left = 11
+      Top = 192
+      Width = 113
+      Height = 17
+      Caption = #1055#1088#1086#1089#1090#1086#1081
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -15
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 8
+      OnClick = cxRadioButton5Click
+    end
+  end
+  object ADOQuery1: TADOQuery
+    Connection = Form1.ADOConnection1
+    DataSource = Form1.DataSource1
+    Parameters = <>
+    Left = 784
+    Top = 280
+  end
+end

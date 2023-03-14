@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.265,D:\Стажировка\Notes\Unit3.dfm=D:\Стажировка\Notes\Unit2.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.080,D:\Стажировка\Notes\Unit1.dfm=D:\Стажировка\Notes\main.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.913,C:\Users\я\OneDrive\Документы\RAD Studio\Projects\Unit1.pas=D:\Стажировка\Notes\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.982,D:\Стажировка\Notes\main.dfm=D:\Стажировка\Notes\Unit1.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.982,D:\Стажировка\Notes\main.pas=D:\Стажировка\Notes\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.571,D:\Стажировка\Notes\Unit2.dfm=D:\Стажировка\Notes\Unit3.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.913,C:\Users\я\OneDrive\Документы\RAD Studio\Projects\Unit1.dfm=D:\Стажировка\Notes\Unit1.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.811,=D:\Стажировка\Notes\Unit2.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.571,D:\Стажировка\Notes\Unit2.pas=D:\Стажировка\Notes\Unit3.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.066,=D:\Стажировка\Notes\Unit3.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.037,D:\Стажировка\Notes\Unit3.pas=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.117,C:\Users\я\OneDrive\Документы\RAD Studio\Projects\Project1.dproj=D:\Стажировка\Notes\Notes.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.265,D:\Стажировка\Notes\Unit3.pas=D:\Стажировка\Notes\Unit2.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.773,=D:\Стажировка\Notes\Unit3.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.080,D:\Стажировка\Notes\Unit1.pas=D:\Стажировка\Notes\main.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.915,=C:\Users\я\OneDrive\Документы\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.523,=D:\Стажировка\Notes\Unit3.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.276,=D:\Стажировка\Notes\Unit4.pas</Transaction>
+  </Transactions>
+</BorlandProject>

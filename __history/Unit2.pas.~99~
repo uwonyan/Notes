@@ -1,0 +1,136 @@
+unit Unit2;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, cxGraphics, cxLookAndFeels,
+  cxLookAndFeelPainters, Vcl.Menus, dxSkinsCore, dxSkinBlack, dxSkinBlue,
+  dxSkinBlueprint, dxSkinCaramel, dxSkinCoffee, dxSkinDarkroom, dxSkinDarkSide,
+  dxSkinDevExpressDarkStyle, dxSkinDevExpressStyle, dxSkinFoggy,
+  dxSkinGlassOceans, dxSkinHighContrast, dxSkiniMaginary, dxSkinLilian,
+  dxSkinLiquidSky, dxSkinLondonLiquidSky, dxSkinMcSkin, dxSkinMetropolis,
+  dxSkinMetropolisDark, dxSkinMoneyTwins, dxSkinOffice2007Black,
+  dxSkinOffice2007Blue, dxSkinOffice2007Green, dxSkinOffice2007Pink,
+  dxSkinOffice2007Silver, dxSkinOffice2010Black, dxSkinOffice2010Blue,
+  dxSkinOffice2010Silver, dxSkinOffice2013DarkGray, dxSkinOffice2013LightGray,
+  dxSkinOffice2013White, dxSkinOffice2016Colorful, dxSkinOffice2016Dark,
+  dxSkinOffice2019Colorful, dxSkinPumpkin, dxSkinSeven, dxSkinSevenClassic,
+  dxSkinSharp, dxSkinSharpPlus, dxSkinSilver, dxSkinSpringtime, dxSkinStardust,
+  dxSkinSummer2008, dxSkinTheAsphaltWorld, dxSkinTheBezier,
+  dxSkinsDefaultPainters, dxSkinValentine, dxSkinVisualStudio2013Blue,
+  dxSkinVisualStudio2013Dark, dxSkinVisualStudio2013Light, dxSkinVS2010,
+  dxSkinWhiteprint, dxSkinXmas2008Blue, cxControls, cxContainer, cxEdit,
+  cxTextEdit, cxMemo, Vcl.StdCtrls, cxButtons, cxLabel, cxMaskEdit,
+  cxDropDownEdit, cxColorComboBox, cxRadioGroup, cxSpinEdit, Data.DB,
+  Data.Win.ADODB;
+
+type
+  TForm2 = class(TForm)
+    GroupBox1: TGroupBox;
+    cxButton1: TcxButton;
+    cxMemo1: TcxMemo;
+    GroupBox2: TGroupBox;
+    cxColorComboBox1: TcxColorComboBox;
+    cxLabel1: TcxLabel;
+    cxLabel2: TcxLabel;
+    cxSpinEdit1: TcxSpinEdit;
+    cxRadioButton1: TcxRadioButton;
+    cxRadioButton2: TcxRadioButton;
+    cxRadioButton3: TcxRadioButton;
+    cxRadioButton4: TcxRadioButton;
+    cxRadioButton5: TcxRadioButton;
+    ADOQuery1: TADOQuery;
+    procedure cxColorComboBox1PropertiesChange(Sender: TObject);
+    procedure cxSpinEdit1PropertiesChange(Sender: TObject);
+    procedure cxRadioButton1Click(Sender: TObject);
+    procedure cxRadioButton2Click(Sender: TObject);
+    procedure cxRadioButton4Click(Sender: TObject);
+    procedure cxRadioButton3Click(Sender: TObject);
+    procedure cxRadioButton5Click(Sender: TObject);
+    procedure cxButton1Click(Sender: TObject);
+    procedure FormShow(Sender: TObject);
+
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form2: TForm2;
+  c, x: string;
+
+implementation
+
+{$R *.dfm}
+
+uses Unit1;
+
+
+procedure TForm2.cxButton1Click(Sender: TObject);
+begin
+  x:= 'INSERT INTO note VALUES ('''+ FormatDateTime('yyyy-mm-dd', Now) +''', '''+ cxMemo1.Text +''', '''+ cxColorComboBox1.Text +''', ' + cxSpinEdit1.Text + ', ''' + c +''')';
+  //ShowMessage(x);
+  ADOQuery1.Close;
+  ADOQuery1.SQL.Clear;
+  ADOQuery1.SQL.Add(x);
+  ADOQuery1.ExecSQL;
+  Form1.ADOTable1.Active:= False;
+  Form1.ADOTable1.Active:= True;
+  ShowMessage('«аметка добавлена! :)');
+  Form2.Close;
+end;
+
+procedure TForm2.cxColorComboBox1PropertiesChange(Sender: TObject);
+begin
+  cxMemo1.Style.Font.Color:= StringToColor(cxColorComboBox1.Text);
+end;
+
+procedure TForm2.cxRadioButton1Click(Sender: TObject); //жирный текст
+begin
+  if cxRadioButton1.Checked
+    then cxMemo1.Style.Font.Style:= [fsBold];
+    c:= '[fsBold]';
+end;
+
+procedure TForm2.cxRadioButton2Click(Sender: TObject); //курсивный текст
+begin
+  if cxRadioButton2.Checked
+    then cxMemo1.Style.Font.Style:= [fsItalic];
+    c:= '[fsItalic]';
+end;
+
+procedure TForm2.cxRadioButton3Click(Sender: TObject); //подчеркнутый текст
+begin
+  if cxRadioButton3.Checked
+    then cxMemo1.Style.Font.Style:= [fsUnderline];
+    c:= '[fsUnderline]';
+end;
+
+procedure TForm2.cxRadioButton4Click(Sender: TObject); //зачеркнутый текст
+begin
+  if cxRadioButton4.Checked
+    then cxMemo1.Style.Font.Style:= [fsStrikeOut];
+    c:= '[fsStrikeOut]';
+end;
+
+procedure TForm2.cxRadioButton5Click(Sender: TObject);
+begin
+  if cxRadioButton5.Checked
+    then cxMemo1.Style.Font.Style:= [];
+    c:= '';
+end;
+
+procedure TForm2.cxSpinEdit1PropertiesChange(Sender: TObject);
+begin
+  cxMemo1.Style.Font.Height:= cxSpinEdit1.Value;
+end;
+
+procedure TForm2.FormShow(Sender: TObject);
+begin
+  c:= '';
+end;
+
+end.
+
